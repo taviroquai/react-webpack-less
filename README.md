@@ -1,1 +1,3 @@
-# react-webpack-less
+# React + Webpack + Less + Redux
+
+Setup from scratch
