@@ -6,6 +6,10 @@ module.exports = {
                 use: "file-loader"
             },
             {
+                test: /\.(jpg|png)$/,
+                use: "file-loader"
+            },
+            {
                 test: /\.less$/,
                 use: ["style-loader", "css-loader", "less-loader"]
             },
