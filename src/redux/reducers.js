@@ -1,10 +1,11 @@
 import { combineReducers } from 'redux';
 
-const home = (state = {}, action) => {
-    switch (action) {
-        case "SET_INITIAL_STATE":
-            state = {};
-            break;
+const home = (state = { hello: 'World' }, action) => {
+    
+    switch (action.type) {
+        case "say_hi":
+            return { hello: 'Redux' };
+            
         default:;
     }
     return state;
